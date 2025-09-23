@@ -15,7 +15,7 @@ Project Cerberus demonstrates Infrastructure as Code (IaC) with Terraform by dep
 - **EC2 Instance** with WordPress installed via `user_data` script  
 - **RDS Instance** (MySQL/MariaDB) used by WordPress  
 - **EBS Volume** attached for persistent storage  
-- **Networking Module** to manage subnets, NAT, and SGs  
+- **Networking Module** to manage subnets and SGs  
 
 ---
 
