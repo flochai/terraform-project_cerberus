@@ -8,7 +8,7 @@ data "aws_ami" "amazon-linux-2" {
   }
 }
 # Create Instance
-resource "aws_instance" "chimera-instance" {
+resource "aws_instance" "cerberus-instance" {
   ami                         = data.aws_ami.amazon-linux-2.id
   associate_public_ip_address = true
   instance_type               = "t2.micro"
@@ -19,8 +19,8 @@ resource "aws_instance" "chimera-instance" {
     #!/bin/bash
     set -euo pipefail
     export DB_HOST="${var.db_host}"    
-    export DB_NAME="chimera_db"
-    export DB_USER="chimera1"
+    export DB_NAME="cerberus_db"
+    export DB_USER="cerberus1"
     export DB_PASSWORD="${var.db_password}"
 
     # run the root script
