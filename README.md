@@ -35,30 +35,30 @@ Project Cerberus demonstrates Infrastructure as Code (IaC) with Terraform by dep
 
 ## Infrastructure Components
 
-VPC (Networking Module)
-	•	CIDR: 10.0.0.0/16
-	•	Public subnets: 10.0.101.0/24, 10.0.102.0/24
-	•	Database subnets: 10.0.201.0/24, 10.0.202.0/24
-	•	Security groups:
-	•	EC2 SG: SSH (22) + HTTP (80)
-	•	RDS SG: Allows port 3306 from EC2 SG
+VPC (Networking Module)<br>
+	•	CIDR: 10.0.0.0/16 <br>
+	•	Public subnets: 10.0.101.0/24, 10.0.102.0/24 <br>
+	•	Database subnets: 10.0.201.0/24, 10.0.202.0/24 <br>
+	•	Security groups: <br>
+	•	EC2 SG: SSH (22) + HTTP (80) <br>
+	•	RDS SG: Allows port 3306 from EC2 SG <br>
 
-EC2 Module
-	•	Amazon Linux 2 AMI
-	•	Type: t2.micro
-	•	Public subnet
-	•	install_wordpress.sh runs via user data
-	•	WordPress configured to use RDS as backend
+EC2 Module <br>
+	•	Amazon Linux 2 AMI <br>
+	•	Type: t2.micro <br>
+	•	Public subnet <br>
+	•	install_wordpress.sh runs via user data <br>
+	•	WordPress configured to use RDS as backend <br>
 
-RDS Module
-	•	Engine: MySQL/MariaDB (3306)
-	•	Multi-AZ enabled
-	•	db_password injected via Terraform variable
+RDS Module <br>
+	•	Engine: MySQL/MariaDB (3306) <br>
+	•	Multi-AZ enabled <br>
+	•	db_password injected via Terraform variable <br>
 
-EBS Module
-	•	10 GiB volume
-	•	Attached to EC2 instance
-	•	Demonstrates block storage management
+EBS Module <br>
+	•	10 GiB volume <br>
+	•	Attached to EC2 instance <br>
+	•	Demonstrates block storage management <br>
 
 ---
 
