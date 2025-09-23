@@ -39,7 +39,6 @@ VPC (Networking Module)
 	•	CIDR: 10.0.0.0/16
 	•	Public subnets: 10.0.101.0/24, 10.0.102.0/24
 	•	Database subnets: 10.0.201.0/24, 10.0.202.0/24
-	•	NAT Gateway for private routing
 	•	Security groups:
 	•	EC2 SG: SSH (22) + HTTP (80)
 	•	RDS SG: Allows port 3306 from EC2 SG
@@ -54,7 +53,6 @@ EC2 Module
 RDS Module
 	•	Engine: MySQL/MariaDB (3306)
 	•	Multi-AZ enabled
-	•	Private subnets only
 	•	db_password injected via Terraform variable
 
 EBS Module
