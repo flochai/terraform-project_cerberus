@@ -41,5 +41,5 @@ variable "db_password" {
 
 variable "namespace" {
   type = string
-  default = "chimera"
+  default = "cerberus"
 }
