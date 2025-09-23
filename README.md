@@ -1,3 +1,5 @@
+![assets-task_01k5tmm22jefyrync15vm1e3m0-1758609579_img_1](https://github.com/user-attachments/assets/b7942a08-a205-4de4-bedb-13be3ce3273d)
+
 # Project Cerberus
 
 Terraform project to provision a full AWS infrastructure running **WordPress** with an **RDS database**, **EC2 web server**, **EBS volume**, and a custom **VPC**.
