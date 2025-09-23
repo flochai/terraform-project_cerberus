@@ -1,8 +1,8 @@
-resource "aws_ebs_volume" "chimera_ebs" {
+resource "aws_ebs_volume" "cerberus_ebs" {
   availability_zone = var.availability_zone
   size              = var.ebs_size
 
-  tags = { Name = "chimera-ebs" }
+  tags = { Name = "cerberus-ebs" }
 }
 
 resource "aws_volume_attachment" "chimera_ebs_att" {
