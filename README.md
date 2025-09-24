@@ -4,6 +4,8 @@
 
 Terraform project to provision a full AWS infrastructure running **WordPress** with an **RDS database**, **EC2 web server**, **EBS volume**, and a custom **VPC**.
 
+Full project write-up: https://www.linkedin.com/pulse/project-cerberus-florian-chaillou-wsqbe
+
 ---
 
 ## Overview
